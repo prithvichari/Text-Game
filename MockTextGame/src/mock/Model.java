@@ -243,8 +243,10 @@ public class Model extends AbstractClass{
 				ending = true;
 				}
 				else
+				{
 					System.out.println("You walk over the corpse of the Ogre. Yet that gets you nowhere.");
 				currentroom = 3;
+				}
 			}
 
 			else if (move == 2)
@@ -256,9 +258,11 @@ public class Model extends AbstractClass{
 				ending = true;
 				}
 				else
+				{
 				System.out.println("You are back in the hallway. There is a room to the left and right of you. \n"
 						+ "You can also walk further down the hallway or move back to go back to the entrance.");
 				currentroom = 1;
+				}
 
 			}
 
@@ -272,8 +276,10 @@ public class Model extends AbstractClass{
 				ending = true;
 				}
 				else
-				System.out.println("You walk to the left and stare at a wal, then think to yourself, why?");
+				{
+				System.out.println("You walk to the left and stare at a wall, then think to yourself, why?");
 				currentroom = 3;
+				}
 
 			}
 
@@ -303,10 +309,12 @@ public class Model extends AbstractClass{
 					ending = true;
 					}
 				else
+				{
 				System.out.println("You climb down the ladder into the basement below the Ogre's room. The basement is filled with piles of trash, yet there is something else here. \n"
 						+ "For some reason you feel inclined to pick up a toothpick with an olive on it. It has been added to your inventory.");
 				toothpick = true;
 				currentroom = 4;
+				}
 			}
 
 			else if (move == 6)
@@ -343,25 +351,25 @@ public class Model extends AbstractClass{
 		{
 			if (move == 1)
 			{
-				System.out.println("There is no room to move forward to.");
+				System.out.println("You climb over the trash and only encounter a wall in front of you.");
 				currentroom = 4;
 			}
 
 			else if (move == 2)
 			{
-				System.out.println("There is no room to move backwards to.");
+				System.out.println("You climb over garbage and end up facing a wall to your behind you.");
 				currentroom = 4;
 			}
 
 			else if (move == 3)
 			{
-				System.out.println("There is no room to move left to.");
+				System.out.println("You climb over trash to your left, and only end up smelling bad.");
 				currentroom = 4;
 			}
 
 			else if (move == 4)
 			{
-				System.out.println("There is no room to move right to.");
+				System.out.println("Climbing over trash must be fun, because that is all you accomplish.");
 				currentroom = 4;
 			}
 
@@ -373,13 +381,13 @@ public class Model extends AbstractClass{
 
 			else if (move == 6)
 			{
-				System.out.println("There is nothing to attack.");
+				System.out.println("You could attack the trash if you wanted to, but you'd get nothing done!");
 				currentroom = 4;
 			}
 
 			else if (move == 7)
 			{
-				System.out.println("There is nothing but garbage everywhere.  There is a ladder leading back to the room where you fought the ogre.");
+				System.out.println("There is nothing but garbage everywhere. There is a ladder leading back to the room where you fought the ogre.");
 				currentroom = 4;
 			}
 		}
@@ -478,7 +486,7 @@ public class Model extends AbstractClass{
 
 			else if (move == 7)
 			{
-				System.out.println("The rack is now empty since you took the mace.  There is a ladder that leads to the basement.  You can also go back into the hallway.");
+				System.out.println("The rack is now empty since you took the mace. There is a ladder that leads to the basement. You can also go back into the hallway.");
 				currentroom = 7;
 			}
 		}
@@ -487,39 +495,82 @@ public class Model extends AbstractClass{
 		{
 			if (move == 1)
 			{
-				System.out.println("There is no room to move forward to.");
+				if (troll == true)
+				{
+					System.out.println("You walk forward, the troll just lazily sticks out its spear as you walk right into it. \n"
+							+ "As you impale yourself on the spear, you realize that maybe you should make better decisions. \n"
+							+ "Unforunately, that was the last decision you'll ever make!");
+					ending = true;
+					}
+				else
+				{
+				System.out.println("You walk into the wall behind the dead troll, it was highly productive! \n"
+						+ "Not.");
 				currentroom = 9;
-				
-				//TROLL BOOLEAN
+				}
 			}
 
 			else if (move == 2)
 			{
-				System.out.println("You move back out into the hallway.  There is a door to your left and right.  There is also the Grand Door in front of you.");
+				if (troll == true)
+				{
+					System.out.println("Normally, a troll wouldn't like it's enemy just walking away from him. \n"
+							+ "But in this instance he is being lazy and just lets you walk back into the hallway.");
+					currentroom = 2;
+					}
+				else
+				{
+				System.out.println("You move back out into the hallway. There is a door to your left and right. There is also that Grand Door in front of you.");
 				currentroom = 2;
-				//TROLL BOOLEAN
+				}
 			}
 
 			else if (move == 3)
 			{
-				System.out.println("There is no room to move left to.");
+				if (troll == true)
+				{
+					System.out.println("You try to walk to the left of the troll. \n"
+							+ "But this enrages it! \n"
+							+ "It is apparently the greatest offense ever to walk to the left of a troll in its culture! \n"
+							+ "It stabs you several times with its spear! It grunts at you before you expire, thus ending your quest.");
+					ending = true;
+				}
+				else
+				{
+				System.out.println("Perhaps you wanted to walk left into that wall, but you aren't intangible, therefore you bump into it.");
 				currentroom = 9;
-				//TROLL BOOLEAN
+				}
 			}
 
 			else if (move == 4)
 			{
-				System.out.println("There is no room to move right to.");
+				if (troll == true)
+				{
+					System.out.println("You walk to the right of the troll, but it merely stops you from going any futher by pushing you away with its spear.");
+					currentroom =  9;
+				}
+				else
+				{
+				System.out.println("The right wall doesn't quite like that you walked into it, but there was nothing it could do about it.");
 				currentroom =  9;
-				// TROLL BOOLEAN
+				}
 			}
 
 			else if (move == 5)
 			{
+				
+				if (troll == true)
+				{
+					System.out.println("Any attempts to climb the ladder behind the troll are met wish pushes and shoves. \n"
+							+ "Apparently it does not want you to go down there.");
+				currentroom =  9;
+				}
+				else
+				{
 				System.out.println("You climb down the ladder and enter the basement. You notice a key rack on the wall. You pick up the key it holds.");
 				currentroom = 10;
-				key = true;
-				//TROLL BOOLEAN
+				key = true;}
+
 			}
 
 			else if (move == 6)
@@ -528,12 +579,9 @@ public class Model extends AbstractClass{
 				{
 					System.out.println("You swing the greatsword at the troll and break its spear! You cleanly cut into its flesh! \n"
 							+ "The Troll wails in agony and dies from its wounds, leaving you alone in the room.");
-					currentroom = 9;
-					
-					//TROLL BOOLEAN FALSE HERE
-					
+					troll = false;
+					currentroom = 9;				
 				}
-
 				else
 				{
 					System.out.println("You can't seem to get close enough to the troll! \n"
@@ -645,7 +693,16 @@ public class Model extends AbstractClass{
 				if (toothpick == true)
 				{
 				System.out.println("You attempt to take out all of your weapons but when you touch them you realize they turned to carrots. \n"
-						+ "All you have left is the toothpick with an olive on it.  The bunny sees it and you hear his stomach growl.  He hops towards you and snatches it out of your hands and swallows it whole.  The fool did not even take the olive off of the toothpick or even think to take your carrot turned weapons instead.  He chokes on the tootpick and dies an anticlimatic death.  You then free the princess from the cage and escort her home.  The king is pleased with your actions and grants you the title of lord.");
+						+ "All you have left is the toothpick with an olive on it! You toss it out there in a last ditch effort! \n"
+						+ "The bunny sees it and you hear his stomach growl. Apparently it was his favorite brand of olive! \n"
+						+ "He hops towards you and snatches it from the ground! \n"
+						+ "The foolish bunny did not even take the olive off of the toothpick or even think to take your carrot turned weapons instead. \n"
+						+ "He chokes on the tootpick and dies a rather anticlimatic death. \n"
+						+ "You then free the princess from the cage and escort her home. \n"
+						+ "The king is pleased with your actions and grants you the Title of Lord.");
+				
+				System.out.println(" ");
+				System.out.println("You won! You defeated the Malicious Bunny of Malathor and saved the Princess!");
 				ending = true;
 				}
 				if (toothpick == false)
@@ -656,7 +713,8 @@ public class Model extends AbstractClass{
 
 			else if (move == 7)
 			{
-				System.out.println("The room is silent. You hear a faint growling and you believe that its comming from the bunny's stomach.");
+				System.out.println("The room is silent. All you can see is the Princess and the Malicious Bunny of Malathor. \n"
+						+ "You hear a faint growling and you believe that its coming from the bunny's stomach.");
 				currentroom = 11;
 			}
 		}}}			
