@@ -471,14 +471,18 @@ public class Model extends AbstractClass{
 
 				else
 				{
-					System.out.println("Your weapons don't cut through the troll's flesh.  It swings its sword and connects with your neck.  You have failed to save the Princess.");
+					System.out.println("You can't seem to get close enough to the troll! \n"
+							+ "It manages to find a weap spot in your armor between your head and chest and stabs you in the neck! \n"
+							+ "It appears your journey ends here and your head becomes the trolls trophy for its home. \n"
+							+ "You have failed to save the Princess.");
 					ending = true;
 				}
 			}
 
 			else if (move == 7)
 			{
-				System.out.println("The troll has paper thin armor that is surprisingly good at withstanding blunt force.");
+				System.out.println("The troll has paper thin armor, yet he seems quite agile and has a spear. \n"
+						+ "Perhaps a longer weapon would be useful here?");
 				currentroom = 9;
 			}
 		}
@@ -487,43 +491,44 @@ public class Model extends AbstractClass{
 		{
 			if (move == 1)
 			{
-				System.out.println("There is no room to move forward to.");
+				System.out.println("You forget that this is a basement with a ladder and walk into the wall in front of you.");
 				currentroom = 10;
 			}
 
 			else if (move == 2)
 			{
-				System.out.println("There is no room to move back to.");
+				System.out.println("You trip and fall backwards over a barrel of carrots!");
 				currentroom = 10;
 			}
 
 			else if (move == 3)
 			{
-				System.out.println("There is no room to move left to.");
+				System.out.println("Are you sure you want to move to the left? There is a wall there.");
 				currentroom = 10;
 			}
 
 			else if (move == 4)
 			{
-				System.out.println("There is no room to move right to.");
+				System.out.println("While it would be nice if there was something to your right to move into besides a wall, there appears to be only a wall.");
 				currentroom = 10;
 			}
 
 			else if (move == 5)
 			{
-				System.out.println("You climb up the ladder and enter the troll room.");
+				System.out.println("You climb up the ladder and enter the deceased troll room.");
 				currentroom = 9;
 			}
 
 			else if (move == 6)
 			{
-				System.out.println("There is nothing to attack.");
+				System.out.println("You arm yourself with the key and swing it around! This accomplishes nothing.");
 				currentroom = 10;
 			}
 
 			else if (move == 7)
 			{
-				System.out.println("You picked up the key.  There is not much to the room other than 25 barrels of carrot brewed ale. There is a ladder that can send you up to the troll room.");
+				System.out.println("You picked up the key.  There is not much to the room other than 25 barrels of carrot brewed ale. \n"
+						+ "There is a ladder that can send you up to the troll room.");
 				currentroom = 10;
 			}
 		}
@@ -578,6 +583,7 @@ public class Model extends AbstractClass{
 						+ "All you have left is the toothpick with an olive on it.  The bunny sees it and you hear his stomach growl.  He hops towards you and snatches it out of your hands and swallows it whole.  The fool did not even take the olive off of the toothpick or even think to take your carrot turned weapons instead.  He chokes on the tootpick and dies an anticlimatic death.  You then free the princess from the cage and escort her home.  The king is pleased with your actions and grants you the title of lord.");
 				ending = true;
 				}
+				if (toothpick == false)
 				System.out.println("You attempt to take out all of your weapons but when you touch them you realize they turned to carrots. \n"
 						+ "By the time your attack is finished, the Malicious Bunny is already nibbling on the bones of your corpse.");
 				ending = true;
