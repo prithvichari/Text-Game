@@ -48,7 +48,7 @@ Climb: This is the command that will allow you to use the ladder in a room if it
 
 FAQ:
 
-How do I get items? You get items simply by walking into the room, your character will automaticlaly pick them up.
+How do I get items? You get items simply by walking into the room, your character will automatically pick them up.
 
 How do I defeat the bunny? Obviously by getting all the items!
 
