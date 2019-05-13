@@ -11,7 +11,7 @@ public class Model extends AbstractClass{
 	boolean key = false;
 	boolean toothpick = false;
 	static boolean ending = false;
-	
+	// Require Enemy boolean
 
 	int currentroom = 0;
 
