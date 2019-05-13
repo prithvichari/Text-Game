@@ -55,7 +55,7 @@ How do I defeat the bunny? Obviously by getting all the items!
 Why can't I defeat monster X? You need the right weapon to defeat them! Be sure to [Examine] for clues!
 
 
-Map: Here is a map to assist you with navigating the rooms in the game if so desired.
+Map: Here is a map to assist you with navigating the rooms in the game if so desired, just know they are \\\SPOILERS///
 
 == , [] : Doors
 
@@ -67,12 +67,12 @@ Map: Here is a map to assist you with navigating the rooms in the game if so des
               |                    |
               |________====________|
  ___________________|        |___________________
-|	|           |        |           |       |
+|   	|           |        |           |       |
 |      ]=[  	   []	     []         ]=[      |
 |Room3B	|  Room 3   |Hallway | Room 4    |Room4B |
 |_______|___________|        |___________|_______|
  ___________________|        |___________________
-|	|           |        |           |       |
+|   	|           |        |           |       |
 |      ]=[  	   []	     []         ]=[      |
 |Room1B	|   Room 1  |Hallway |  Room 2   | Room2B|
 |_______|___________|        |___________|_______|
@@ -90,21 +90,21 @@ In order to beat the game you must have all the items through your travels. The 
 Once you start in the Entrance. 
 [Move Forward] to move forward into the Hallway, to the right will be a door to Room 2. 
 [Move Right] will bring you into Room 2 which will have the Greatsword. 
-[Move Left] to move back into the Hallway
+[Move Back] to move back into the Hallway
 [Move Forward] to proceed further down the Hallway, then to right right will be Room 4. 
 [Move Right] into Room 4. 
 [Attack] the Troll to kill it.
 [Climb] to climb the ladder into Room 4B to pick up the Key.
 [Climb] to climb back into Room 4.
-[Move Left] To move back into the Hallway.
+[Move Back] To move back into the Hallway.
 [Move Left] again to move into Room 3 to pick up the Mace.
-[Move Right] to move back into the Hallway.
-[Move Down] to move back down the Hallway.
+[Move Back] to move back into the Hallway.
+[Move Back] to move back down the Hallway.
 [Move Left] into Room 1 now that you have the Key.
 [Attack] to defeat the Ogre.
 [Climb] to climb into Room 1B where you will find the Toothpick.
 [Climb] to move back into Room 1.
-[Move Right] to move back into the Hallway.
+[Move Back] to move back into the Hallway.
 [Move Forward] to move up the Hallway.
 [Move Forward] again to move into the Bosses Lair.
 [Attack] to defeat the Malicious Bunny and defeat it.
