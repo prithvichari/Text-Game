@@ -64,25 +64,27 @@ public class Model extends AbstractClass{
 		{
 			if (move == 1)
 			{
-				System.out.println("You enter a long hallway; so long that you can't see the other end.  You see a door to your left and right.  Will you enter one of these doors or continue walking forward?");
+				System.out.println("You have found yourself within a long hallway; so long that you can't see the other end. \n"
+						+ "You could see two doors, one to your left and right. Will you enter one of these doors or continue walking forward?");
 				currentroom=1;
 			}
 
 			else if(move == 2)
 			{
-				System.out.println("Don't give up now. You must save the princess!");
+				System.out.println("What are you? A coward?! Scared of a little bit of bones from your fallen comrades who were annihilated by a bunny?? \n"
+						+ "Well, I guess any sane person would run away seeing that, yet you musn't give up now! You have a princess to save and a game to finish!");
 				currentroom=0;
 			}
 
 			else if(move == 3)
 			{
-				System.out.println("There is nothing of note in that direction.");
+				System.out.println("You chose to walk into a wall, I bet that hurt.");
 				currentroom=0;
 			}
 
 			else if(move == 4)
 			{
-				System.out.println("There is nothing of note in that direction.");
+				System.out.println("You chose to walk into a wall, I bet that hurt.");
 				currentroom=0;
 			}
 
@@ -94,13 +96,15 @@ public class Model extends AbstractClass{
 
 			else if(move == 6)
 			{
-				System.out.println("There is nobody here to attack.");
+				System.out.println("There is nobody here to attack in the entrance, only you are here.");
 				currentroom=0;
 			}
 
 			else if(move == 7)
 			{
-				System.out.println("You are in a large room with decorations that are trophies that the Bunny aquired through his years of murder, stealing, and kidnapping.  There is no one in the room to greet you.  The only way forward is a door in front of you");
+				System.out.println("You are in the large entrance still with decorations that are trophies that the Malicious Bunny has aquired through his years of murder, \n"
+						+ "stealing, and kidnapping. The most prominent 'trophies' being the corpses of your comrades. There is no one in the room to greet you. \n"
+						+ "The only way forward is a door in front of you");
 				currentroom=0;
 			}
 
@@ -116,19 +120,19 @@ public class Model extends AbstractClass{
 
 			else if (move == 2)
 			{
-				System.out.println("You are back in the main Entrance. The door to the hallway is in front of you");
+				System.out.println("You are back in the main Entrance. The door to the hallway is in front of you.");
 				currentroom = 0;
 			}
 
 			else if (move == 3)
 			{
-				if (key = false)
+				if (key == false)
 				{
 					System.out.println("You try to open the door but it appears to be locked.");
 					currentroom = 3;
 				}
 
-				else if (key = true)
+				else if (key == true)
 				{
 					System.out.println("You unlock the door with your key and enter the room.  Inside is an ogre ready to attack.  He is wearing strong plating armor that does not have any kinks in it.  But it does look like the metal is maluable and can dent when hit hard.");
 					currentroom = 1;
@@ -165,7 +169,7 @@ public class Model extends AbstractClass{
 		{
 			if (move == 1)
 			{
-				if (toothpick = true)
+				if (toothpick == true)
 				{
 					System.out.println("You notice that the shape of the lock is the exact same as the Toothpick of Doom.  You place it into the lock and the door starts shaking.  You hear gears vigorously grinding and the door slowly opens.  You see the Malicious Bunny of Malthor sitting on his throne with a peeved look in his face.  In the corner you see the princess in a cage fit for a dog.  What will you do?");
 					currentroom = 11;
@@ -250,7 +254,7 @@ public class Model extends AbstractClass{
 
 			else if (move == 6)
 			{
-				if (mace = true)
+				if (mace == true)
 				{
 					System.out.println("You swing your mace at the beast.  Its armor crumbles more and more with each hit.  Eventually you do enough blunt damage to kill it.  His death leads to a section of the floor opening revealing a ladder.");
 					currentroom = 3;
@@ -258,14 +262,15 @@ public class Model extends AbstractClass{
 
 				else 
 				{
-					System.out.println("You attack him with every weapon you have but he does not look hurt at all.  He swings his club and it hits you right in the chest killing you.  Due to your failure, the princess will be forever captured.");
+					System.out.println("You attack the Ogre with every weapon you have! But unfortunately he does not look to be receiving at all.  He swings his club and it hits you right in the chest killing you.  Due to your failure, the princess will be forever captured.");
 					ending = true;
 				}
 			}
 
 			else if (move == 7)
 			{
-				System.out.println("The ogre wearing full armor but it does not look like it is sturdy. Slicing it won't work but maybe a blunt attack.");
+				System.out.println("The ogre is wearing full armor. It's so thick that slicing at it with any sword will not work. \n"
+						+ "Perhaps there is a weapon that can do more of a blunt attack?");
 				currentroom = 3;
 			}
 		}
@@ -440,7 +445,7 @@ public class Model extends AbstractClass{
 
 			else if (move == 6)
 			{
-				if (greatsword = true)
+				if (greatsword == true)
 				{
 					System.out.println("You swing the greatsword at the troll and cleanly cut its flesh.  It wails in agony and dies from its wounds.");
 					currentroom = 9;

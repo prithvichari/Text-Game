@@ -10,6 +10,8 @@ Knights Conquest
 
 Introduction:
 
+NOTE: This Readme file is best read as a txt file with word wrap mode enabled.
+
 This game was created as a final project for the Object-Oriented Programming class at the Rutgers University New Brunswick campus. It was created by a team of 5 team members who are Prithvi Chari, our group lead, then Obiageli Agbu, Tom Hoshia, Joseph Morath and then George McLaughlin. The purpose of the project was to create a text based adventure game that only uses text input commands, has items, has ways to win or lose the game and must be able to reset back to the beginning. Special thanks to our professor, Akash Pandey.
 
 Without further ado
@@ -20,11 +22,11 @@ Knights Conquest is a text based adventure game on the java platform. The goal o
 
 Story:
 
-Your story begins in the kingdom of Nalastor. You are Sir Sverre, a well established knight in your kingdom but with very little experience in battle as there has been peace for many decades. Suddenly and without warning, a dark force has pushed into the kingdom and threatens the peace! The princess of the kingdom is kidnapped by these dark forces that are soon to be discovered to be controlled by the Malicious Bunny of Malathor! This is your call to action! Many knights have been sent before you and have not returned, but this is your chance to prove yourself! The king finally calls for you and gives you this fateful task. Travel to the Lands of Malathor, defeat the Malicious Bunny and his henchmen, and return with the princess!
+Your story begins in the kingdom of Nalastor. You are a well established knight in your kingdom but with very little experience in battle as there has been peace for many decades. Suddenly and without warning, a dark force has pushed into the kingdom and threatens the peace! The princess of the kingdom is kidnapped by these dark forces that are soon to be discovered to be controlled by the Malicious Bunny of Malathor! This is your call to action! Many knights have been sent before you and have not returned, but this is your chance to prove yourself! The king finally calls for you and gives you this fateful task. Travel to the Lands of Malathor, defeat the Malicious Bunny and his henchmen, and return with the princess!
 
 Characters:
 
-Sir Sverre: You! The knight! You start off with your trusty shortsword and armor. Your objective, to find all the items necessary, defeat the monsters who stand in your way and destroy the Malicious Bunny of Malathor!
+The Knight: You! The knight! You start off with your trusty shortsword and armor. Your objective, to find all the items necessary, defeat the monsters who stand in your way and destroy the Malicious Bunny of Malathor!
 
 The Grand Troll of Enkingdon: This troll has joined forces with the Malicious Bunny to gain power and wealth! He is much taller than Sir Sverre and very nimble and quick, yet doesn't wear any armor, therefore, he might prove to be quite the challenge. He only carries a sword, but is quite capable with it. Perhaps your shortsword might do the trick, but maybe not. Is Sir Sverre capable enough to defeat this troll? Or maybe will he have to get a larger weapon ....
 
@@ -40,13 +42,18 @@ Examine: This command will be very important in order to give you an idea of wha
 
 Move (direction): This command will enable you to navigate and move through the maze. Directions are [Left] [Right] [Forward] [Back] and should look like [Move Forward]
 
-Fight: This is the command you will use, if you chose to, to fight an enemy within the room. It is unwise to charge into battle without using [Examine] first.
+Attack: This is the command you will use, if you chose to, to fight an enemy within the room. It is unwise to charge into battle without using [Examine] first.
 
 Climb: This is the command that will allow you to use the ladder in a room if it is present, it can be used for climbing up and down.
 
-Pick up: This is the command that will be used to pick up any items that are present in the room such as a key or weapons.
+FAQ:
 
-Unlock: This command will be used to unlock doors that are [locked].
+How do I get items? You get items simply by walking into the room, your character will automaticlaly pick them up.
+
+How do I defeat the bunny? Obviously by getting all the items!
+
+Why can't I defeat monster X? You need the right weapon to defeat them! Be sure to [Examine] for clues!
+
 
 Map: Here is a map to assist you with navigating the rooms in the game if so desired.
 
@@ -83,28 +90,23 @@ In order to beat the game you must have all the items through your travels. The 
 Once you start in the Entrance. 
 [Move Forward] to move forward into the Hallway, to the right will be a door to Room 2. 
 [Move Right] will bring you into Room 2 which will have the Greatsword. 
-[Pick Up] the Greatsword.
 [Move Left] to move back into the Hallway
 [Move Forward] to proceed further down the Hallway, then to right right will be Room 4. 
 [Move Right] into Room 4. 
-[Fight] the Troll to kill it.
-[Climb] to climb the ladder into Room 4B.
-[Pick Up] the Key to Room 1.
+[Attack] the Troll to kill it.
+[Climb] to climb the ladder into Room 4B to pick up the Key.
 [Climb] to climb back into Room 4.
 [Move Left] To move back into the Hallway.
-[Move Left] again to move into Room 3.
-[Pick Up] the Mace.
+[Move Left] again to move into Room 3 to pick up the Mace.
 [Move Right] to move back into the Hallway.
 [Move Down] to move back down the Hallway.
-[Unlock] to Unlock Room 1.
-[Move Left] into Room 1.
-[Fight] to defeat the Ogre.
-[Climb] to climb into Room 1B.
-[Pick Up] to pick up the Toothpick of Doom.
+[Move Left] into Room 1 now that you have the Key.
+[Attack] to defeat the Ogre.
+[Climb] to climb into Room 1B where you will find the Toothpick.
 [Climb] to move back into Room 1.
 [Move Right] to move back into the Hallway.
 [Move Forward] to move up the Hallway.
 [Move Forward] again to move into the Bosses Lair.
-[Fight] to defeat the Malicious Bunny and defeat it.
+[Attack] to defeat the Malicious Bunny and defeat it.
 
 The game is over at this time and you win.
