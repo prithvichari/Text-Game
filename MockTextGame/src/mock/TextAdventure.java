@@ -20,8 +20,9 @@ public class TextAdventure extends Model{
 					+ "'Who is this brave knight who wishes to save my daughter?' \n"
 					+ "It seems he forgot your name ...");
 			String Lname = input.nextLine();
-			System.out.println("'Oh I see!' The King ruffles through a scroll with several names crossed off until he reaches your name at the bottom, in fact all names are crossed off.. \n"  
-			+ "except yours... 'Oh yes! Ahem ... Ser " +Lname + "! Now, which fief do you hail from Ser " + Lname + "?");
+			System.out.println("'Oh I see!' The King ruffles through a scroll with several names crossed off until he reaches your name at the bottom, \n"
+					+ "in fact all names are crossed off.. except yours... 'Oh yes! Ahem ... Ser " +Lname + "!"  
+			+ " Now, which fief do you hail from Ser " + Lname + "?");
 			String Home = input.nextLine();
 			KnightClass Name = new KnightClass();
 			Name.setLastName(Lname);
@@ -30,7 +31,8 @@ public class TextAdventure extends Model{
 
 			System.out.println("");
 
-			System.out.println("You travel far and wide for many weeks until you reach your final destination deep within the Lands of Malathor. \n"
+			System.out.println("You leave your home of " + Home + " and travel far and wide for many weeks until you reach your \n"
+					+ "final destination deep within the Lands of Malathor. \n"
 					+ "Armed with your trusty shortsword, you step forward towards the entrace of the Malicious Bunny's lair. You are set to \n"
 					+ "figure out a way to destroy the doors, until they just merely open up to allow you within. You shrug and step inside."); //Write introduction here. Mention that player has a short sword.
 			System.out.println("");

@@ -145,10 +145,17 @@ public class Model extends AbstractClass{
 
 			else if (move == 4)
 			{
+				if (greatsword == false)
+				{ 
 				System.out.println("You enter the room on the right.  On a weapon stand you see a greatsword. You pick it up and add it to your collection of weapons. \n"
 						+ "You notice a ladder in the corner going to a lower level, maybe it is time to explore?");
 				currentroom = 5;
 				greatsword = true;
+			    }
+				else
+				System.out.println("You enter the room on the right. The weapon stand is now empty. \n"
+						+ "There is a ladder in the corner of the room going to a lower level, maybe it is time to explore?"); 
+				currentroom = 5; 
 			}
 
 			else if (move == 5)
@@ -199,10 +206,17 @@ public class Model extends AbstractClass{
 
 			else if (move == 3)
 			{
+				if (mace == false)
+				{
 				System.out.println("You enter the room on your left. On the wall there is a mace hanging. You take it off and add it to your collection. \n"
 						+ "Doing so opens a trapdoor in the corner of the room with a ladder going down. Maybe something is down there?");
 				currentroom = 7;
 				mace = true;
+				}
+				else
+					System.out.println("You enter the room on your left. On the wall is the hook the mace hung from. \n"
+							+ "There is a ladder in the corner of the room going down.");
+				currentroom = 7;
 			}
 
 			else if (move == 4)
@@ -309,12 +323,18 @@ public class Model extends AbstractClass{
 					ending = true;
 					}
 				else
+					if (toothpick == false)
 				{
 				System.out.println("You climb down the ladder into the basement below the Ogre's room. The basement is filled with piles of trash, yet there is something else here. \n"
 						+ "For some reason you feel inclined to pick up a toothpick with an olive on it. It has been added to your inventory.");
 				toothpick = true;
 				currentroom = 4;
 				}
+					else
+					{
+						System.out.println("You climb down the ladder and enter the trash basement again.");
+						currentroom = 4;
+					}
 			}
 
 			else if (move == 6)
@@ -546,7 +566,7 @@ public class Model extends AbstractClass{
 			{
 				if (troll == true)
 				{
-					System.out.println("You walk to the right of the troll, but it merely stops you from going any futher by pushing you away with its spear.");
+					System.out.println("You walk to the right of the troll, but it merely stops you from going any further by pushing you away with its spear.");
 					currentroom =  9;
 				}
 				else
@@ -566,11 +586,16 @@ public class Model extends AbstractClass{
 				currentroom =  9;
 				}
 				else
+					if (key == false)
 				{
 				System.out.println("You climb down the ladder and enter the basement. You notice a key rack on the wall. You pick up the key it holds.");
 				currentroom = 10;
 				key = true;}
-
+					else 
+					{
+						System.out.println("You climb down the ladder and enter the basement again.");
+						currentroom = 10;
+					}
 			}
 
 			else if (move == 6)
@@ -585,7 +610,7 @@ public class Model extends AbstractClass{
 				else
 				{
 					System.out.println("You can't seem to get close enough to the troll! \n"
-							+ "It manages to find a weap spot in your armor between your head and chest and stabs you in the neck! \n"
+							+ "It manages to find a weak spot in your armor between your head and chest and stabs you in the neck! \n"
 							+ "It appears your journey ends here and your head becomes the trolls trophy for its home. \n"
 							+ "You have failed to save the Princess.");
 					ending = true;
@@ -650,7 +675,7 @@ public class Model extends AbstractClass{
 		{
 			if (move == 1)
 			{
-				System.out.println("You charge straight at the bunny! It doesn't appreceat that very much and does the same to you! Except, it is much faster. \n"
+				System.out.println("You charge straight at the bunny! It doesn't appreciate that very much and does the same to you! Except, it is much faster. \n"
 						+ "It instantly grabs at your neck and cuts your juggular with much skill. You would comment on how well \n"
 						+ "the rabbit has fought, except that you instantly bleed to death! You failed to save the princess in this instance. \n"
 						+ "Your corpse is hung up at the entrance with the rest of your comrades.");
@@ -699,7 +724,7 @@ public class Model extends AbstractClass{
 						+ "The foolish bunny did not even take the olive off of the toothpick or even think to take your carrot turned weapons instead. \n"
 						+ "He chokes on the tootpick and dies a rather anticlimatic death. \n"
 						+ "You then free the princess from the cage and escort her home. \n"
-						+ "The king is pleased with your actions and grants you the Title of Lord.");
+						+ "The king is pleased with your actions and grants you the Title of Lord for your Lands.");
 				
 				System.out.println(" ");
 				System.out.println("You won! You defeated the Malicious Bunny of Malathor and saved the Princess!");
